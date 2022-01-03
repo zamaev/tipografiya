@@ -1,0 +1,14 @@
+@import 'fonts';
+
+@import 'config';
+@import 'reset';
+
+@import 'theme';
+
+@import 'buttons';
+
+
+body {
+    font-family: var(--text-font-family);
+    font-weight: var(--text-font-weight);
+}

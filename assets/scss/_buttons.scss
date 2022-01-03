@@ -1,0 +1,32 @@
+.btn {
+    padding: 13px 35px;
+    border-radius: 100vh;
+    cursor: pointer;
+    font-size: var(--button-font-size);
+    text-transform: uppercase;
+
+    &.btn-outline {
+        background-color: inherit;
+        border: 2px solid #7E7E7E;
+        padding: 11px 33px;
+        color: var(--light-grey);
+
+        &:hover {
+            border: 2px solid #424242;
+        }
+    }
+
+    &.btn-fill {
+        background-color: var(--light-blue);
+        border: 0;
+        color: white;
+
+        &:hover {
+            background: #7EA8D8;
+        }
+    }
+
+    &:hover {
+        box-shadow: var(--button-box-shadow);
+    }
+}
