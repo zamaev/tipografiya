@@ -1,20 +1,32 @@
 :root {
-    --black: #000;
-
-    --dark-grey: #686868;
-    --dark-blue: #5D7C9F;
-    --dark-white: #F8FBFC;
-
-    --light-grey: rgba(95, 95, 95, 0.5);
-    --light-blue: #6688AE;
-    --light-white: linear-gradient(180deg, #F8FBFC 0%, #FFFFFF 100%);
-
-    --button-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
-
-    --title-font-family: 'Montserrat', Tahoma, 'MS Sans Serif', Arial, Helvetica, sans-serif;
-    
-    --text-font-family: 'Futura PT', Tahoma, 'MS Sans Serif', Arial, Helvetica, sans-serif;
-    --text-font-weight: 500;
-
-    --button-font-size: 22px;
+    --button-font-size: 16px;
 }
+
+$dark_grey: #686868;
+$dark_blue: #5D7C9F;
+$dark_white: #F8FBFC;
+$light_grey: rgba(95, 95, 95, 0.5);
+$light_blue: #6688AE;
+$light_white: linear-gradient(180deg, #F8FBFC 0%, #FFFFFF 100%);
+
+
+body {
+    font-family: 'Futura PT', Tahoma, 'MS Sans Serif', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+$header_outline_color: #686868;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', Tahoma, 'MS Sans Serif', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: white;
+    text-shadow: 0 1px 1px $header_outline_color, 
+                 1px 0 1px $header_outline_color,
+                 0 -1px 1px $header_outline_color,
+                 -1px 0 1px $header_outline_color,
+                 1px 1px 1px $header_outline_color,
+                 1px -1px 1px $header_outline_color,
+                 -1px 1px 1px $header_outline_color,
+                 -1px -1px 1px $header_outline_color;
+}
+

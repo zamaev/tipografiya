@@ -1,14 +1,7 @@
 @import 'fonts';
-
-@import 'config';
 @import 'reset';
-
 @import 'theme';
+@import 'components/button';
+@import 'components/menu_burger';
 
-@import 'buttons';
 
-
-body {
-    font-family: var(--text-font-family);
-    font-weight: var(--text-font-weight);
-}

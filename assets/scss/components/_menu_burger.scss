@@ -1,0 +1,59 @@
+$menu_burger_border_radius: 0;
+$menu_burger_size: 30;
+
+.menu_burger {
+
+    label {
+        display: block;
+        width: #{$menu_burger_size}px;
+        height: #{$menu_burger_size}px;
+        cursor: pointer;
+
+        div {
+            position: relative;
+            top: 0;
+            height: #{$menu_burger_size / 5}px;
+            background-color: black;
+            margin-bottom: #{$menu_burger_size / 5}px;
+            transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
+
+            @if $menu_burger_border_radius != 0 {
+                border-radius: $menu_burger_border_radius;
+            }
+
+            &:first-child {
+                transform-origin: 0;
+            }
+            &:nth-child(2) {
+                right: 0;
+                width: #{$menu_burger_size}px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+                transform-origin: 100%;
+            }
+        }
+    }
+    
+    #menu_burger_status {
+        display: none;
+
+        &:checked + label div {
+            &:first-child {
+                top: -#{$menu_burger_size / 10}px;
+                transform: rotateZ(45deg);
+            }
+            &:nth-child(2) {
+                width: #{$menu_burger_size * 1.416}px;
+                top: 0;
+                right: #{$menu_burger_size / 4.6153}px;
+                transform: rotateZ(-45deg);
+            }
+            &:last-child {
+                top: #{$menu_burger_size / 10}px;
+                transform: rotateZ(45deg);
+            }
+        }
+    }
+}
+

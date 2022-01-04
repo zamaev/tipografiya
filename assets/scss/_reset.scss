@@ -1,3 +1,6 @@
+$line_height: 1.5;
+$scorll_padding_top: 0;
+
 *,
 *::before,
 *::after {
@@ -5,7 +8,7 @@
 }
 
 body,
-h1, h2, h3, h4,
+h1, h2, h3, h4, h5, h6,
 p,
 figure,
 figcaption,
@@ -23,12 +26,12 @@ ol[role="list"] {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--scorll-padding-top);
+    scroll-padding-top: $scorll_padding_top;
 }
 
 body {
     min-height: 100vh;
-    line-height: var(--line-height);
+    line-height: $line_height;
 }
 
 img {
