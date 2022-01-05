@@ -24,6 +24,11 @@ ol[role="list"] {
     padding: 0;
 }
 
+[role="list"] a {
+    color: inherit;
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: $scorll_padding_top;

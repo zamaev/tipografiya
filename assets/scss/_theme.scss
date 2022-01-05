@@ -1,6 +1,6 @@
-:root {
-    --button-font-size: 16px;
-}
+$screen_point: 1000;
+$is_mobile: "(max-width: #{$screen_point}px)";
+$is_desktop: "(min-width: #{$screen_point+1}px)";
 
 $dark_grey: #686868;
 $dark_blue: #5D7C9F;
@@ -9,24 +9,46 @@ $light_grey: rgba(95, 95, 95, 0.5);
 $light_blue: #6688AE;
 $light_white: linear-gradient(180deg, #F8FBFC 0%, #FFFFFF 100%);
 
+$header_text_outline_color: #686868;
+$header_text_outline_size: 1px;
+
+:root {
+    --header-font-size: 30px;
+    --text-font-size: 14px;
+    --text-line-height: 18px;
+    --button-font-size: 16px;
+}
+
+@media screen and #{$is_desktop} {
+    :root {
+        --header-font-size: 48px;
+        --text-font-size: 18px;
+        --text-line-height: 25px;
+        --button-font-size: 16px;
+    }
+}
+
 
 body {
     font-family: 'Futura PT', Tahoma, 'MS Sans Serif', Arial, Helvetica, sans-serif;
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
     font-weight: 500;
 }
 
-$header_outline_color: #686868;
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .header-text {
     font-family: 'Montserrat', Tahoma, 'MS Sans Serif', Arial, Helvetica, sans-serif;
+    font-size: var(--header-font-size);
+    line-height: 120%;
+    letter-spacing: 0.01em;
     font-weight: 500;
     color: white;
-    text-shadow: 0 1px 1px $header_outline_color, 
-                 1px 0 1px $header_outline_color,
-                 0 -1px 1px $header_outline_color,
-                 -1px 0 1px $header_outline_color,
-                 1px 1px 1px $header_outline_color,
-                 1px -1px 1px $header_outline_color,
-                 -1px 1px 1px $header_outline_color,
-                 -1px -1px 1px $header_outline_color;
+    text-shadow: 0 1px $header_text_outline_size $header_text_outline_color, 
+                 1px 0 $header_text_outline_size $header_text_outline_color,
+                 0 -1px $header_text_outline_size $header_text_outline_color,
+                 -1px 0 $header_text_outline_size $header_text_outline_color,
+                 1px 1px $header_text_outline_size $header_text_outline_color,
+                 1px -1px $header_text_outline_size $header_text_outline_color,
+                 -1px 1px $header_text_outline_size $header_text_outline_color,
+                 -1px -1px $header_text_outline_size $header_text_outline_color;
 }
-

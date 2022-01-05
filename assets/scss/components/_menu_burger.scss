@@ -1,59 +1,69 @@
 $menu_burger_border_radius: 0;
-$menu_burger_size: 30;
+$menu_burger_size: 22;
+$menu_burger_close_width: 30;
+$menu_burger_color: $light_blue;
 
-.menu_burger {
+.menu_burger__icon {
+    display: block;
+    width: #{$menu_burger_close_width}px;
+    height: #{$menu_burger_size}px;
+    cursor: pointer;
 
-    label {
-        display: block;
-        width: #{$menu_burger_size}px;
-        height: #{$menu_burger_size}px;
-        cursor: pointer;
+    div {
+        position: relative;
+        top: 0;
+        height: #{$menu_burger_size / 5}px;
+        background-color: $menu_burger_color;
+        margin-bottom: #{$menu_burger_size / 5}px;
+        transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
 
-        div {
-            position: relative;
-            top: 0;
-            height: #{$menu_burger_size / 5}px;
-            background-color: black;
-            margin-bottom: #{$menu_burger_size / 5}px;
-            transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
-
-            @if $menu_burger_border_radius != 0 {
-                border-radius: $menu_burger_border_radius;
-            }
-
-            &:first-child {
-                transform-origin: 0;
-            }
-            &:nth-child(2) {
-                right: 0;
-                width: #{$menu_burger_size}px;
-            }
-            &:last-child {
-                margin-bottom: 0;
-                transform-origin: 100%;
-            }
+        @if $menu_burger_border_radius != 0 {
+            border-radius: $menu_burger_border_radius;
         }
-    }
-    
-    #menu_burger_status {
-        display: none;
 
-        &:checked + label div {
-            &:first-child {
-                top: -#{$menu_burger_size / 10}px;
-                transform: rotateZ(45deg);
-            }
-            &:nth-child(2) {
-                width: #{$menu_burger_size * 1.416}px;
-                top: 0;
-                right: #{$menu_burger_size / 4.6153}px;
-                transform: rotateZ(-45deg);
-            }
-            &:last-child {
-                top: #{$menu_burger_size / 10}px;
-                transform: rotateZ(45deg);
-            }
+        &:first-child {
+            transform-origin: 0;
+        }
+        &:nth-child(2) {
+            right: 0;
+            // width: #{$menu_burger_size}px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+            transform-origin: 100%;
         }
     }
 }
 
+.menu_burger__list {
+    display: none;
+}
+
+#menu_burger__status {
+    display: none;
+
+    &:checked + .menu_burger__content .menu_burger__icon {
+        width: #{$menu_burger_size}px;
+    }
+
+    &:checked + .menu_burger__content .menu_burger__icon div {
+        &:first-child {
+            top: -#{$menu_burger_size / 10}px;
+            transform: rotateZ(45deg);
+        }
+        &:nth-child(2) {
+            width: #{$menu_burger_size * 1.416}px;
+            top: 0;
+            right: #{$menu_burger_size / 4.6153}px;
+            transform: rotateZ(-45deg);
+        }
+        &:last-child {
+            top: #{$menu_burger_size / 10}px;
+            transform: rotateZ(45deg);
+        }
+    }
+
+    &:checked + .menu_burger__content .menu_burger__list {
+        display: block;
+    }
+}
