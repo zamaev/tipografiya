@@ -1,49 +1,48 @@
-<header role="banner">
+<header class="header">
     <div class="header__content">
-        <input type="checkbox" id="menu_burger__status">
-        <div class="menu_burger__content">
-            <label class="menu_burger__icon" for="menu_burger__status">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-            <div class="header__info-block">
-                <div class="header__partner">
-                    <figure>
-                        <img src="assets/img/heidelberg.png" alt="HEIDELBERG">
-                        <figcaption>Предприятие-партнёр</figcaption>
-                    </figure>
-                </div>
-                <div class="address">
-                    <img src="assets/img/location.svg" alt="Адрес">
-                    <p>
-                        г. Москва, М Тимирязевская
-                        <br>
-                        ул. Яблочкова, д. 21, корп. 3, Деловой центр «Я21»
-                    </p>
-                </div>
-                <div class="contact">
-                    <a href="mailto:info@ok-press.ru">info@ok-press.ru</a>
-                    <a href="tel:+74956601572">+7 495 660-15-72</a>
-                </div>
-            </div>
-            <div class="menu_burger__list">
-                <ul role="list">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Продукция</a></li>
-                    <li><a href="#">О типографии</a></li>
-                    <li><a href="#">Информация</a></li>
-                    <li>
-                        <button type="button" class="header__button btn btn-fill">Перезвоните мне</button>
-                    </li>
+          
+        <div class="header__right">   
+            <h1 class="header__title h1 large font-futura">
+                ТИПОГРАФИЯ
+                <br>
+                ОК-ПРЕСС
+            </h1>
+            <div class="header__services">
+                <div class="h2">Для Вас:</div>
+                <ul>
+                    <li>персональный менеджер-технолог</li>
+                    <li>удобно расположенный офис&nbsp;<wbr>(в&nbsp;одной минуте от метро!)</li>
                 </ul>
             </div>
         </div>
-        <a href="#" class="header__logo">
-            <img src="../assets/img/logo.svg" alt="ok press типография">
-        </a>
-        <div class="header__title header-text">
-            ТИПОГРАФИЯ<br>ОК-ПРЕСС
+
+        <div class="header__button">
+            <button type="button" class="btn btn-fill show_mob">Перезвоните мне</button>
         </div>
+                    
+        <div class="header__left">
+            <div class="header__address">
+                <img src="assets/img/location.png" alt="Адрес">
+                <div>
+                    <span class="show_mob">г. Москва, м. Тимирязевская</span>
+                    <span class="show_desk">Москва<br>М Тимирязевская</span>
+                    <span>ул. Яблочкова, д. 21, к. 3, <br> Деловой центр «Я21»</span>
+                </div>
+            </div>
+            <div class="header__contact">
+                <a href="tel:+74956601572">+7 495 660-15-72</a>
+                <button type="button" class="btn btn-outline show_desk">Перезвоните мне</button>
+                <br>
+                <a href="mailto:info@ok-press.ru" class="show_mob">info@ok-press.ru</a>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="header__partner show_mob">
+        <figure>
+            <img src="assets/img/heidelberg.png" alt="HEIDELBERG">
+            <figcaption>Предприятие-партнёр</figcaption>
+        </figure>
     </div>
 </header>

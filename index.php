@@ -8,8 +8,18 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
+    <?php include 'blocks/nav.php'; ?>
     <?php include 'blocks/header.php'; ?>
 
+<br>
+<br>
+<br>
+456456
+
+<br>
+<br>555
+<br>55
+<br>
 
 </body>
 </html>

@@ -1,11 +1,13 @@
 @import 'fonts';
 @import 'reset';
-@import 'theme';
+@import 'settings';
 @import 'components/button';
 @import 'components/menu_burger';
 
+@import 'blocks/nav';
 @import 'blocks/header';
 
 body {
-    background-color:brown;
+    min-width: 300px;
+    // background-color:brown;
 }
