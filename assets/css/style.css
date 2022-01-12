@@ -740,6 +740,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
   background: linear-gradient(180deg, #6688AE 0%, #F8FBFC 100%);
 }
 
+.bestsellers__wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .bestsellers__header {
   margin-bottom: 60px;
 }

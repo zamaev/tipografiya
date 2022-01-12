@@ -1,6 +1,11 @@
 .bestsellers {
     background: linear-gradient(180deg, #6688AE 0%, #F8FBFC 100%);
 
+    &__wrapper {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
     &__header {
         margin-bottom: 60px;
     }
