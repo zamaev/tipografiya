@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;EACd,SAAS,EAAE,OAAO;CACrB",
+    "sources": [
+        "../scss/mixs.scss"
+    ],
+    "names": [],
+    "file": "mixs.css"
+}

@@ -10,6 +10,7 @@
 <body>
     <?php include 'blocks/nav.php'; ?>
     <?php include 'blocks/header.php'; ?>
+    <?php include 'blocks/bestsellers.php'; ?>
 
 <br>
 <br>

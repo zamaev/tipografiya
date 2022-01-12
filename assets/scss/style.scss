@@ -1,11 +1,14 @@
 @import 'fonts';
 @import 'reset';
 @import 'settings';
+@import 'mixs';
 @import 'components/button';
 @import 'components/menu_burger';
 
 @import 'blocks/nav';
 @import 'blocks/header';
+@import 'blocks/bestsellers';
+
 
 body {
     min-width: 300px;
