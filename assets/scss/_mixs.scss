@@ -1,0 +1,25 @@
+.link-text {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 16px;
+}
+@media screen and #{$is_desktop} {
+    .container {
+        padding: 120px;
+    }
+}
+
+.block-title {
+    margin-bottom: 30px;
+}
+@media screen and #{$is_desktop} {
+    .block-title {
+        margin-bottom: 60px;
+    }
+}

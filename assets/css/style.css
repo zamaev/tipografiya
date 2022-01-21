@@ -225,6 +225,28 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
   font-size: inherit;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 16px;
+}
+
+@media screen and (min-width: 1001px) {
+  .container {
+    padding: 120px;
+  }
+}
+
+.block-title {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1001px) {
+  .block-title {
+    margin-bottom: 60px;
+  }
+}
+
 .btn {
   padding: 13px 35px;
   border-radius: 100vh;
@@ -602,7 +624,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
 
 @media screen and (min-width: 1001px) {
   .header {
-    background: bottom left/80% no-repeat url("../img/desktop_background_vector_1.svg"), bottom right/75% no-repeat url("../img/desktop_background_vector_2.svg"), bottom right/contain no-repeat url("../img/desktop_background_vector_3.svg");
+    background: bottom left/83% no-repeat url("../img/desktop_background_vector_1.svg"), bottom right/75% no-repeat url("../img/desktop_background_vector_2.svg"), bottom right/contain no-repeat url("../img/desktop_background_vector_3.svg");
     position: relative;
   }
   .header::before {
@@ -740,15 +762,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
   background: linear-gradient(180deg, #6688AE 0%, #F8FBFC 100%);
 }
 
-.bestsellers__wrapper {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.bestsellers__header {
-  margin-bottom: 60px;
-}
-
 .bestsellers__products {
   display: -ms-grid;
   display: grid;
@@ -797,9 +810,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
 }
 
 @media screen and (max-width: 1000px) {
-  .bestsellers {
-    padding: 40px 16px;
-  }
   .bestsellers__products {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -822,9 +832,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2 {
 }
 
 @media screen and (min-width: 1001px) {
-  .bestsellers {
-    padding: 120px;
-  }
   .bestsellers__products {
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr;

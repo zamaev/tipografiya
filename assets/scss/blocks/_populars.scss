@@ -1,0 +1,75 @@
+.populars {
+
+    &__products {
+        // display: grid;
+    }
+
+    &__item {
+
+
+        &-image {
+
+        }
+
+        &-title {
+
+        }
+
+    }
+
+}
+
+
+@media screen and #{$is_mobile} {
+
+    .populars {
+
+
+        &__products {
+
+        }
+
+        &__item {
+
+
+            &-image {
+
+            }
+
+            &-title {
+                
+            }
+
+        }
+
+
+    }
+
+}
+
+@media screen and #{$is_desktop} {
+
+    .populars {
+
+
+        &__products {
+
+        }
+    
+        &__item {
+    
+    
+            &-image {
+    
+            }
+    
+            &-title {
+                
+            }
+    
+        }
+    
+
+    }
+
+}
