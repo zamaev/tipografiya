@@ -1,4 +1,4 @@
-<section class="about">
+<section class="about base-background">
     <div class="container">
         <h2 class="h1 block-title">О ТИПОГРАФИИ</h2>
         <div class="about__content">

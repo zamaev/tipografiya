@@ -1,4 +1,4 @@
-<section class="delivery">
+<section class="delivery base-background">
     <div class="container">
         <h2 class="h1 block-title">ДОСТАВКА И ОПЛАТА</h2>
         <div class="delivery__content">
@@ -19,8 +19,8 @@
                     <div class="delivery__title-text h2">Об оплате</div>
                 </div>
                 <div class="delivery__text">Оплатить заказ можно по банковским реквизитам.</div>
-
             </div>
         </div>
+        <a href="#" type="button" class="btn btn-fill delivery__button">ЗАДАТЬ ВОПРОС</a>
     </div>
 </section>

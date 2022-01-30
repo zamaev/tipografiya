@@ -1,0 +1,63 @@
+.contacts {
+    &__content {
+        display: grid;
+    }
+    &__title {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and #{$is_mobile} {
+    .contacts {
+
+        &__content {
+            grid-gap: 40px;
+        }
+
+        &__map {
+            width: 100%;
+            aspect-ratio: 2 / 1;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and #{$is_desktop} {
+    .contacts {
+
+        &__content {
+            grid-template-areas: "phone email" 
+                                 "office office"
+                                 "manufact manufact";
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 60px;
+        }
+        &__phone {
+            grid-area: phone;
+        }
+    
+        &__email {
+            grid-area: email;
+        }
+    
+        &__office {
+            grid-area: office;
+        }
+    
+        &__manufact {
+            grid-area: manufact;
+        }
+
+        &__office, 
+        &__manufact {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+        }
+
+        &__map {
+            order: -1;
+            width: calc(100% - 40px);
+            aspect-ratio: 2 / 1;
+        }
+    }
+}

@@ -14,6 +14,7 @@
     <?php include 'blocks/populars.php'; ?>
     <?php include 'blocks/about.php'; ?>
     <?php include 'blocks/delivery.php'; ?>
+    <?php include 'blocks/contacts.php'; ?>
     
 
     <?php include 'blocks/footer.php'; ?>

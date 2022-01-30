@@ -1,4 +1,4 @@
-<section class="populars">
+<section class="populars base-background">
     <div class="container">
         <h2 class="h1 block-title">ВОСТРЕБОВАННЫЕ УСЛУГИ</h2>
         <div class="populars__products hover-shadow-wrapper">
