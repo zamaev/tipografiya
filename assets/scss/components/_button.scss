@@ -10,7 +10,7 @@ $button_box_shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
     text-decoration: none;
 
-    &.btn-outline {
+    &-outline {
         background-color: inherit;
         border: 2px solid #7E7E7E;
         color: $light_grey;
@@ -20,7 +20,7 @@ $button_box_shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
         }
     }
 
-    &.btn-fill {
+    &-fill {
         background-color: $light-blue;
         border: 0;
         color: white;

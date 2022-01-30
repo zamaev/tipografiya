@@ -1,3 +1,9 @@
+.nav {
+    &__content {
+        box-shadow: 0px 6px 10px rgba(57, 114, 135, 0.08);
+    }
+}
+
 @media screen and #{$is_mobile} {
     $mobile_nav_height: 78px;
 
@@ -77,8 +83,7 @@
 @media screen and #{$is_desktop} {
     .nav {
         background: $light_white;
-        box-shadow: 0px 6px 10px rgba(57, 114, 135, 0.08);
-
+        
         &__content {
             display: flex;
         }
