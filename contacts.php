@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
-    <?php include 'blocks/nav.php'; ?>
-    
-    <div class="breadcrumbs base-background">Главная — О типографии — Контакты</div>
-    <?php include 'blocks/contacts.php'; ?>
-    <?php include 'blocks/message.php'; ?>
-    
-    <?php include 'blocks/footer.php'; ?>    
+<?php include 'blocks/nav.php'; ?>
+
+<div class="breadcrumbs base-background">Главная — О типографии — Контакты</div>
+<?php include 'blocks/contacts.php'; ?>
+<?php include 'blocks/message.php'; ?>
+
+<?php include 'blocks/footer.php'; ?>    
 </body>
 </html>

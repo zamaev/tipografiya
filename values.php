@@ -8,28 +8,28 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
-    <?php include 'blocks/nav.php'; ?>
+<?php include 'blocks/nav.php'; ?>
 
-    <section class="values base-background">
-        <div class="breadcrumbs">Главная — О типографии — Наши ценности</div>
-        <div class="container">
+<section class="values base-background">
+    <div class="breadcrumbs">Главная — О типографии — Наши ценности</div>
+    <div class="container">
 
-            <div class="values__content onas__content">
-                <div class="values__logo onas__logo">
-                    <img src="/assets/img/logo.svg" alt="ok-press">
-                </div>
-
-                <div class="values__text">
-                    <div class="block-title h1">НАШИ ЦЕННОСТИ</div>
-
-                    <div class="h2 values__text-title">Почему обращаются к нам?</div>
-                    <p>Штат компании состоит из высоко-квалифицированных сотрудников, многие из которых имеют профильное, полиграфическое образование. Ежегодно компания приобретает новые единицы оборудования, которое позволяет расширять спектр оказываемых услуг. За годы работы, типография, выполнила большое количество сложных, интересных работ</p>
-                </div>
-
+        <div class="values__content onas__content">
+            <div class="values__logo onas__logo">
+                <img src="/assets/img/logo.svg" alt="ok-press">
             </div>
+
+            <div class="values__text">
+                <h1 class="block-title h1">НАШИ ЦЕННОСТИ</h1>
+
+                <div class="h2 values__text-title">Почему обращаются к нам?</div>
+                <p>Штат компании состоит из высоко-квалифицированных сотрудников, многие из которых имеют профильное, полиграфическое образование. Ежегодно компания приобретает новые единицы оборудования, которое позволяет расширять спектр оказываемых услуг. За годы работы, типография, выполнила большое количество сложных, интересных работ</p>
+            </div>
+
         </div>
-    </section>
-    
-    <?php include 'blocks/footer.php'; ?>    
+    </div>
+</section>
+
+<?php include 'blocks/footer.php'; ?>    
 </body>
 </html>

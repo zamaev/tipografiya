@@ -1,0 +1,38 @@
+.error {
+    display: flex;
+    align-items: center;
+
+    &__url {
+        color: $dark_grey !important;
+    }
+}
+
+
+@media screen and #{$is_mobile} {
+    .error {
+        height: 300px;
+
+        &__text,
+        &__url {
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and #{$is_desktop} {
+    .error {
+        height: 500px;
+
+        &__content {
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        &__text,
+        &__url {
+            display: block;
+            margin-top: 30px;
+        }
+    }
+}
