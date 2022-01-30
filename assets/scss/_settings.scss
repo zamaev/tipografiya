@@ -18,6 +18,9 @@ $is_desktop: "(min-width: #{$screen_point+1}px)";
         display: block;
     }
 }
+.none {
+    display: none !important;
+}
 
 
 $dark_grey: #686868;

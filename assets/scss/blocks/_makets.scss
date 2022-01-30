@@ -1,0 +1,87 @@
+.makets {
+
+    &__item {
+       
+    }
+
+
+    &__title {
+        display: block;
+        background: #FFFFFF;
+        box-shadow: 0px 6px 10px rgba(57, 114, 135, 0.08);
+        border-radius: 20px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            content: "+";
+            position: absolute;
+        }
+    }
+
+    &__info {
+        display: none;
+    }
+    
+    input {
+        display: none;
+
+        &:checked {
+            & + .makets__title::after {            
+                content: "-";
+            }
+            & ~ .makets__info {
+                display: block;
+            }
+        }
+    }
+
+
+}
+
+@media screen and #{$is_mobile} {
+    .makets {
+
+        &__item {
+           
+        }
+    
+        &__title {
+            padding: 16px 45px 16px 20px;
+            margin-bottom: 20px;
+
+            &::after {
+                top: calc(50% - 27px / 2);
+                right: 20px;
+            }
+        }
+    
+        &__info {
+            padding: 16px 20px;
+        }
+    }
+}
+
+@media screen and #{$is_desktop} {
+    .makets {
+
+        &__item {
+           
+        }
+
+        &__title {
+            padding: 28px 100px 28px 60px;
+            margin-bottom: 40px;
+
+            &::after {
+                top: calc(50% - 35px / 2);
+                right: 60px;
+            }
+        }
+    
+        &__info {
+            
+            padding: 28px 60px;
+        }
+    }
+}

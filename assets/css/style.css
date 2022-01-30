@@ -160,6 +160,10 @@ button {
   }
 }
 
+.none {
+  display: none !important;
+}
+
 :root {
   --h1-font-size: 30px;
   --h1-line-height: 37px;
@@ -1518,6 +1522,65 @@ a.link-text-hover:hover, .link-text-hover a:hover {
   .equipments__title {
     margin-top: 40px;
     margin-bottom: 12px;
+  }
+}
+
+.makets__title {
+  display: block;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 6px 10px rgba(57, 114, 135, 0.08);
+          box-shadow: 0px 6px 10px rgba(57, 114, 135, 0.08);
+  border-radius: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.makets__title::after {
+  content: "+";
+  position: absolute;
+}
+
+.makets__info {
+  display: none;
+}
+
+.makets input {
+  display: none;
+}
+
+.makets input:checked + .makets__title::after {
+  content: "-";
+}
+
+.makets input:checked ~ .makets__info {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .makets__title {
+    padding: 16px 45px 16px 20px;
+    margin-bottom: 20px;
+  }
+  .makets__title::after {
+    top: calc(50% - 27px / 2);
+    right: 20px;
+  }
+  .makets__info {
+    padding: 16px 20px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .makets__title {
+    padding: 28px 100px 28px 60px;
+    margin-bottom: 40px;
+  }
+  .makets__title::after {
+    top: calc(50% - 35px / 2);
+    right: 60px;
+  }
+  .makets__info {
+    padding: 28px 60px;
   }
 }
 
