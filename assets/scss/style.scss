@@ -2,6 +2,7 @@
 @import 'reset';
 @import 'settings';
 @import 'mixs';
+
 @import 'components/button';
 @import 'components/menu_burger';
 
@@ -9,9 +10,9 @@
 @import 'blocks/header';
 @import 'blocks/bestsellers';
 @import 'blocks/populars';
+@import 'blocks/about';
+@import 'blocks/delivery';
 
 
-body {
-    min-width: 300px;
-    // background-color:brown;
-}
+@import 'blocks/footer';
+

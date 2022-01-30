@@ -12,16 +12,10 @@
     <?php include 'blocks/header.php'; ?>
     <?php include 'blocks/bestsellers.php'; ?>
     <?php include 'blocks/populars.php'; ?>
+    <?php include 'blocks/about.php'; ?>
+    <?php include 'blocks/delivery.php'; ?>
+    
 
-<br>
-<br>
-<br>
-456456
-
-<br>
-<br>555
-<br>55
-<br>
-
+    <?php include 'blocks/footer.php'; ?>
 </body>
 </html>
