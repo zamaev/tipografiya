@@ -10,14 +10,14 @@
 <body>
     <?php include 'blocks/nav.php'; ?>
 
-    <section class="services">
+    <section class="services base-background">
         <div class="breadcrumbs">Главная — Услуги</div>
         <div class="container">
             <div class="block-title h1">ВСЕ УСЛУГИ</div>
             <div class="services__content">
 
                 <div class="services__item">                    
-                    <div class="services__image populars__item" style="background-image: url('assets/img/populars/p3.png');">
+                    <div class="services__image populars__item" style="background-image: url('assets/img/services/s3.png');">
                         <div class="populars__item-title">Офсетная печать</div>
                     </div>
                     <div class="services__text">
@@ -27,7 +27,7 @@
                 </div>
 
                 <div class="services__item">                    
-                    <div class="services__image populars__item" style="background-image: url('assets/img/populars/p2.png');">
+                    <div class="services__image populars__item" style="background-image: url('assets/img/services/s2.png');">
                         <div class="populars__item-title">Цифровая печать</div>
                     </div>
                     <div class="services__text">
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="services__item">                    
-                    <div class="services__image populars__item" style="background-image: url('assets/img/populars/p4.png');">
+                    <div class="services__image populars__item" style="background-image: url('assets/img/services/s4.png');">
                         <div class="populars__item-title">УФ-лакирование</div>
                     </div>
                     <div class="services__text">
@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="services__item">                    
-                    <div class="services__image populars__item" style="background-image: url('assets/img/populars/p5.png');">
+                    <div class="services__image populars__item" style="background-image: url('assets/img/services/s5.png');">
                         <div class="populars__item-title">Скрепление</div>
                     </div>
                     <div class="services__text">
@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="services__item">                    
-                    <div class="services__image populars__item" style="background-image: url('assets/img/populars/p6.png');">
+                    <div class="services__image populars__item" style="background-image: url('assets/img/services/s6.png');">
                         <div class="populars__item-title">Высечка</div>
                     </div>
                     <div class="services__text">

@@ -1,80 +1,25 @@
 .bestsellers {
     background: linear-gradient(180deg, #6688AE 0%,#F8FBFC 100%);
-
-    &__products {
-        display: grid;
-    }
-
-    &__item {
-        background: #FFFFFF;
-        box-shadow: 0px 6px 10px rgba(57, 114, 135, 0.08);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        position: relative;
-
-        &-image {
-            position: absolute;
-            height: 100%;
-            z-index: 1;
-        }
-        &-title {
-            z-index: 2;
-            width: 100%;
-            text-align: center;
-            color: #5F5F5F;
-            background: rgba(255, 255, 255, 0.8);
-            box-shadow: 0px 4px 4px rgba(102, 136, 174, 0.15);
-            backdrop-filter: blur(10px);
-        }
-    }
-
-    &__buttom {
-        margin: 60px auto 0;
-    }
 }
-
 
 @media screen and #{$is_mobile} {
     .bestsellers {
 
-        &__products {
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 9px;
-            margin-top: 30px;
-        }
-
-        &__item {
+        .products__item {
             border-radius: 10px;
             aspect-ratio: 150 / 100;
-
-            &-image {
-                border-radius: 10px;
-            }
-            &-title {
-                font-size: 18px;
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                padding: 11px;
-            }
         }
     }
 }
 
-
 @media screen and #{$is_desktop} {
     .bestsellers {
         
-        &__products {
+        .products__content {
             grid-template-columns: 1fr 1fr 1fr 1fr;
-            grid-gap: 40px;
-            margin-top: 60px;
         }
 
-        &__item {
-            border-radius: 20px;
-            aspect-ratio: 1 / 1;
+        .products__item {
 
             &:nth-child(1) {
                 aspect-ratio: unset;
@@ -83,16 +28,6 @@
             &:nth-child(6) {
                 aspect-ratio: unset;
                 grid-column: auto / span 2;
-            }
-
-            &-image {
-                border-radius: 20px;
-            }
-            &-title {
-                font-size: 22px;
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                padding: 18px;
             }
         }
     }
