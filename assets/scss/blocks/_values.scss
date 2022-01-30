@@ -1,0 +1,22 @@
+// .values {
+// }
+
+@media screen and #{$is_mobile} {
+    .values {
+        &__text {
+            &-title {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media screen and #{$is_desktop} {
+    .values {
+        &__text {
+            &-title {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

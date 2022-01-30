@@ -1,0 +1,130 @@
+.onas {
+
+    &__content {
+        display: grid;
+    }
+        &__logo {
+
+        }
+        &__text {
+
+        }
+            &__list {
+
+                &-item {
+                    display: flex;
+                    align-items: center;
+
+                    &-icon {
+
+                    }
+                    &-text {
+
+                    }
+                }
+            }
+}
+
+.partner {
+
+    &__content {
+        display: grid;
+    }
+}
+
+
+
+@media screen and #{$is_mobile} {
+    .onas {
+
+        &__content {
+            display: grid;
+            row-gap: 30px;
+
+        }
+            &__logo {
+
+                img {
+                    width: 50%;
+                }
+            }
+            &__text {
+                display: grid;
+                row-gap: 40px;
+    
+            }
+                &__list {
+                    display: grid;
+                    row-gap: 20px;
+    
+                    &-item {
+    
+                        &-icon {
+                            font-size: 30px;
+                            width: 55px;
+                        }
+                        &-text {
+                            width: calc(100% - 55px);
+                        }
+                    }
+                }
+    }
+
+    
+    .partner {
+
+        &__content {
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+    }
+
+}
+
+
+@media screen and #{$is_desktop} {
+    .onas {
+
+        &__content {
+            grid-template-columns: 1fr 1fr;
+        }
+            &__logo {
+                order: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                
+                img {
+                    width: 60%;
+                }
+            }
+            &__text {
+                display: grid;
+                row-gap: 60px;
+            }
+                &__list {
+                    display: grid;
+                    row-gap: 30px;
+
+                    &-item {
+    
+                        &-icon {
+                            font-size: 48px;
+                            width: 90px;
+                        }
+                        &-text {
+                            width: calc(100% - 90px);
+                        }
+                    }
+                }
+    }
+
+    
+    .partner {
+
+        &__content {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+    }
+}

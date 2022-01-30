@@ -1,50 +1,17 @@
 .populars {
-    &__products {
+    &__content {
         display: grid;
     }
-
-    &__item {
-        aspect-ratio: 1 / 1;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
-        &-title {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(30px);
-            border-radius: 20px;
-            color: #5F5F5F;
-        }
-
-    }
-
     &__buttom {
         margin: 60px auto 0;
     }
 }
 
-
 @media screen and #{$is_mobile} {
     .populars {
-
-        &__products {
+        &__content {
             grid-template-columns: 1fr 1fr;
             grid-gap: 9px;
-        }
-
-        &__item {
-
-            &-title {
-                    
-                padding-top: 11px;
-                padding-bottom: 11px;
-                font-size: 16px;
-            }
         }
     }
 }
@@ -52,19 +19,9 @@
 @media screen and #{$is_desktop} {
     .populars {
 
-        &__products {
+        &__content {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-gap: 40px;
-        }
-    
-        &__item {
-    
-            &-title {
-                    
-                padding-top: 18px;
-                padding-bottom: 18px;
-                font-size: 22px;
-            }
         }
     }
 }

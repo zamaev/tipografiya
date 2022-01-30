@@ -10,39 +10,14 @@
                 <p><span class="h2">Типография «ОК-ПРЕСС»</span><br> является типографией полного цикла.</p>
             </div>
         </div>
-        <div class="about__steps-title">Технологический процесс состоит из трёх основных этапов:</div>
-        <div class="about__steps">
-            <div class="about__item">
-                <div class="about__item-title">
-                    <div class="about__item-title-image">
-                        <img src="/assets/img/steps/step1.png" alt="">
-                    </div>
-                    <div class="about__item-title-text">Допечатная подготовка (PREPRESS)</div>
-                </div>
-                <div class="about__item-text">Дизайн, вёрстка, цветокоррекция, подготовка спусков для вывода печатных форм, правка макетов заказчика согласно требованиям типографии</div>
-            </div>
-            <div class="about__item">
-                <div class="about__item-title">
-                    <div class="about__item-title-image">
-                        <img src="/assets/img/steps/step2.png" alt="">
-                    </div>
-                    <div class="about__item-title-text">Печать (PRESS)</div>
-                </div>
-                <div class="about__item-text">Полноцветная листовая печать офсетным или цифровым  способом.</div>
-            </div>
-            <div class="about__item">
-                <div class="about__item-title">
-                    <div class="about__item-title-image">
-                        <img src="/assets/img/steps/step3.png" alt="">
-                    </div>
-                    <div class="about__item-title-text">Постпечатная обработка (POSTPRESS)</div>
-                </div>
-                <div class="about__item-text">Резка, высечка, фальцовка, ламинация, каширование, перфорация, КБС, шитьё на скобу, конгрев.</div>
-            </div>
-        </div>
-        <div class="about__buttons">
-            <a href="#" type="button" class="btn btn-outline about__button">ПРО ОБОРУДОВАНИЕ</a>
-            <a href="#" type="button" class="btn btn-outline about__button">НАШИ ЦЕННОСТИ</a>
-        </div>
+    </div>
+</section>
+
+<?php include 'blocks/technology.php'; ?>  
+
+<section class="about base-background">
+    <div class="about__buttons">
+        <a href="#" type="button" class="btn btn-outline about__button">ПРО ОБОРУДОВАНИЕ</a>
+        <a href="#" type="button" class="btn btn-outline about__button">НАШИ ЦЕННОСТИ</a>
     </div>
 </section>

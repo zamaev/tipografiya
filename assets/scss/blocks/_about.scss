@@ -1,79 +1,32 @@
 .about {
-    // &__content {
-    // }
-        &__image {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-    
-    &__steps {
-        display: grid;
+    &__image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
-        &__item {
-            background-color: white;
-            border-radius: 30px;
-
-            &-title {
-                display: flex;
-                align-items: center;
-                margin-bottom: 25px;
-
-                &-image {
-                    margin-right: 20px;
-                }
-                // &-text {
-                // }
-            } 
-            // &-text {
-            // }
-        }
-
+    
     &__buttons {
         display: flex;
-        margin-top: 60px;
+        max-width: 1400px;
+        margin: 0 auto;
     }
-        // &__button {   
-        // }
 }
 
 @media screen and #{$is_mobile} {
     .about {
-        // &__content { 
-        // }
-            &__text {
-                display: grid;
-                grid-gap: 30px;
-            }
-            &__image {
-                aspect-ratio: 3 / 1;
-            }
         
-        &__steps-title {
-            margin-top: 20px;
-            margin-bottom: 20px;
+        &__text {
+            display: grid;
+            grid-gap: 30px;
         }
-
-        &__steps {
-            grid-gap: 20px;
+        &__image {
+            aspect-ratio: 3 / 1;
         }
-            &__item {
-                padding: 20px;
-
-                &-title {
-                    // &-image {
-                    // }
-                    &-text {
-                        font-size: 16px;
-                    }
-                }
-                // &-text {
-                // }
-            }
-
+    
         &__buttons {
             flex-direction: column;
             align-items: center;
+            padding: 0 16px 40px;
         }
             &__button {
                 &:first-child {
@@ -99,33 +52,9 @@
                 aspect-ratio: 1 / 1;
             }
 
-        &__steps-title {
-            margin-top: 55px;
-            margin-bottom: 40px;
-        }
-
-        &__steps {
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 40px;
-        }
-            &__item {
-                padding: 25px;
-
-                &-title {
-                    // &-image {
-                    // }
-                    &-text {
-                        font-size: 22px;
-                    }
-                }  
-                // &-text {
-                // }
-        }
-
         &__buttons {
             justify-content: space-evenly;
+            padding: 0 120px 60px;
         }
-            // &__button {  
-            // }
     }
 }
