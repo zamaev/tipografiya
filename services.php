@@ -9,6 +9,7 @@
 </head>
 <body>
 <?php include 'blocks/nav.php'; ?>
+<?php include 'blocks/popup.php'; ?>
 
 <section class="services base-background">
     <div class="breadcrumbs">Главная — Услуги</div>
@@ -22,7 +23,7 @@
                 </div>
                 <div class="services__text">
                     <p>Наиболее эффективный способ печати больших и средних тиражей. Стоимость печатного изделия напрямую зависит от объёма тиража.</p>
-                    <a href="#" type="button" class="services__button btn btn-outline">Отправить заявку</a>
+                    <button class="popup__button services__button btn btn-outline">Отправить заявку</button>
                 </div>
             </div>
 
@@ -32,7 +33,7 @@
                 </div>
                 <div class="services__text">
                     <p>Изготовление малых тиражей продукции от одного экземпляра.</p>
-                    <a href="#" type="button" class="services__button btn btn-outline">Отправить заявку</a>
+                    <button class="popup__button services__button btn btn-outline">Отправить заявку</button>
                 </div>
             </div>
 
@@ -42,7 +43,7 @@
                 </div>
                 <div class="services__text">
                     <p>Нанесение на печатную поверхность специального УФ-лака. Используется для получения визуальных эффектов (перламутр, флуоресцент, рельеф)</p>
-                    <a href="#" type="button" class="services__button btn btn-outline">Отправить заявку</a>
+                    <button class="popup__button services__button btn btn-outline">Отправить заявку</button>
                 </div>
             </div>
 
@@ -52,7 +53,7 @@
                 </div>
                 <div class="services__text">
                     <p>Самый экономичный и надёжный способ скрепления тетрадных блоков, буклетов, брошюр и т.п.  с помощью проволочной скобы</p>
-                    <a href="#" type="button" class="services__button btn btn-outline">Отправить заявку</a>
+                    <button class="popup__button services__button btn btn-outline">Отправить заявку</button>
                 </div>
             </div>
 
@@ -62,7 +63,7 @@
                 </div>
                 <div class="services__text">
                     <p>Применяется с целью придания готовым изделиям фигурной формы, пробивки отверстий или полостей.</p>
-                    <a href="#" type="button" class="services__button btn btn-outline">Отправить заявку</a>
+                    <button class="popup__button services__button btn btn-outline">Отправить заявку</button>
                 </div>
             </div>
 
@@ -70,6 +71,8 @@
     </div>
 </section>
 
-<?php include 'blocks/footer.php'; ?>    
+<?php include 'blocks/footer.php'; ?>
+
+<script src="/assets/js/script.js"></script>
 </body>
 </html>

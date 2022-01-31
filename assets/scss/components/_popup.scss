@@ -1,0 +1,95 @@
+
+.popup {
+    background-color: rgba(102, 136, 174, 0.5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 12;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__content {
+        background-color: white;
+        width: 100%;
+        position: relative;
+        border-radius: 20px;
+    }
+
+    &__close {
+        position: absolute;
+        border: 0;
+        background-color: inherit;
+        cursor: pointer;
+    }
+
+    &__form {
+        display: grid;
+
+        input {
+            width: 100%;
+            border: 1px solid #BEBEBE;
+            border-radius: 7px;
+            padding: 10px 14px;
+        }
+        button {
+            margin: 0 auto;
+        }
+    }
+}
+
+body.popup__open {
+    height: 100vh;
+    overflow: hidden;
+}
+.popup {
+    display: none;
+}
+.popup.popup__open {
+    display: flex;
+}
+
+
+@media screen and #{$is_mobile} {
+    .popup {
+    
+        &__content {
+            padding: 40px 50px;
+            max-width: 340px;
+            
+        }
+
+        &__close {
+            top: 15px;
+            right: 15px;
+        }
+
+        &__form {
+            row-gap: 10px;
+
+        }
+    }
+}
+
+@media screen and #{$is_desktop} {
+    .popup {
+    
+        &__content {
+            padding: 60px 100px;
+            max-width: 560px;
+        }
+
+        &__close {
+            top: 20px;
+            right: 20px;
+        }
+
+        &__form {
+            row-gap: 30px;
+
+        }
+    }
+}
