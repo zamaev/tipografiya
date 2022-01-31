@@ -29,20 +29,20 @@
             </div>
             <div class="menu_burger__list">
                 <ul role="list">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Продукция</a></li>
-                    <li><a href="#">О типографии</a></li>
-                    <li><a href="#">Информация</a></li>
+                    <li><a href="[[~3]]">Услуги</a></li>
+                    <li><a href="[[~4]]">Продукция</a></li>
+                    <li><a href="[[~5]]">О типографии</a></li>
+                    <li><a href="[[~9]]">Информация</a></li>
                     <li class="show_desk">
-                        <button type="button" class="nav__button btn btn-fill">Перезвоните мне</button>
+                        <button type="button" class="nav__button btn btn-fill popup__button">Перезвоните мне</button>
                     </li>
                 </ul>
             </div>
         </div>
-        <a href="#" class="nav__logo">
+        <a href="/" class="nav__logo">
             <img src="../assets/img/logo.svg" alt="ok press типография">
         </a>
-        <a href="#" class="nav__title h1 show_mob font-futura">
+        <a href="/" class="nav__title h1 show_mob font-futura">
             ТИПОГРАФИЯ<br>ОК-ПРЕСС
         </a>
     </div>

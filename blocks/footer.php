@@ -3,13 +3,13 @@
 
         <div class="footer__menu">
             <div class="footer__pages link-text-hover">
-                <a href="#" class="footer__pages-item">О типографии</a>
-                <a href="#" class="footer__pages-item">Техтребования</a>
-                <a href="#" class="footer__pages-item">Оплата и доставка</a>
+                <a href="[[~5]]" class="footer__pages-item">О типографии</a>
+                <a href="[[~9]]" class="footer__pages-item">Техтребования</a>
+                <a href="[[~10]]" class="footer__pages-item">Оплата и доставка</a>
                 <a href="#" class="footer__pages-item">Акции</a>
                 <a href="#" class="footer__pages-item">Материалы</a>
                 <a href="#" class="footer__pages-item">Статьи и новости</a>
-                <a href="#" class="footer__pages-item">Контакты</a>
+                <a href="[[~8]]" class="footer__pages-item">Контакты</a>
             </div>
             <div class="footer__services">
                 <div class="footer__services-item">
@@ -58,12 +58,12 @@
 
         <div class="footer__info">
             <div class="footer__logo">
-                <img src="/assets/img/logo.svg" alt="ok-press"  class="footer__logo-img">
+                <a href="/"><img src="/assets/img/logo.svg" alt="ok-press"  class="footer__logo-img"></a>
             </div>
             <div class="footer__contact">
-                +7 495 660-15-72
+                <a href="tel:+74956601572" class="link-text">+7 495 660-15-72</a>
                 <br>
-                INFO@OK-PRESS.RU
+                <a href="mailto:info@ok-press.ru" class="link-text">INFO@OK-PRESS.RU</a>
             </div>
         </div>
 

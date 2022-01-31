@@ -17,7 +17,7 @@
         </div>
 
         <div class="header__button">
-            <button type="button" class="btn btn-fill show_mob">Перезвоните мне</button>
+            <button class="btn btn-fill show_mob popup__button">Перезвоните мне</button>
         </div>
                     
         <div class="header__left">
@@ -31,7 +31,7 @@
             </div>
             <div class="header__contact">
                 <a href="tel:+74956601572">+7 495 660-15-72</a>
-                <button type="button" class="btn btn-outline show_desk">Перезвоните мне</button>
+                <button type="button" class="btn btn-outline show_desk popup__button">Перезвоните мне</button>
                 <br>
                 <a href="mailto:info@ok-press.ru" class="show_mob">info@ok-press.ru</a>
             </div>

@@ -19,3 +19,9 @@ document.querySelectorAll('.popup__close').forEach(el => {
         closePopup();
     })
 });
+
+document.querySelector('.popup').addEventListener('click', e => {
+    if (e.target.classList.contains('popup')) {
+        closePopup();
+    }
+});
