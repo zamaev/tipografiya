@@ -25,7 +25,7 @@
                         Деловой центр «Я21»
                     </div>
                 </div>
-                <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A11ca3c7f9583051179411f594265b913f0ed26db6ccafde8e3c785a2fbc8c2dc&amp;source=constructor" frameborder="0"></iframe>
+                <iframe class="contacts__map" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A11ca3c7f9583051179411f594265b913f0ed26db6ccafde8e3c785a2fbc8c2dc&amp;source=constructor" frameborder="0"></iframe>
             </div>
 
             <div class="contacts__manufact">
@@ -37,7 +37,7 @@
                         Деловой центр «Я21»
                     </div>
                 </div>
-                <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A11ca3c7f9583051179411f594265b913f0ed26db6ccafde8e3c785a2fbc8c2dc&amp;source=constructor" frameborder="0"></iframe>
+                <iframe class="contacts__map" data-src="https://yandex.ru/map-widget/v1/?um=constructor%3A11ca3c7f9583051179411f594265b913f0ed26db6ccafde8e3c785a2fbc8c2dc&amp;source=constructor" frameborder="0"></iframe>
             </div>
 
         </div>

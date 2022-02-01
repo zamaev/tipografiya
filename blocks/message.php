@@ -5,9 +5,9 @@
             <form action="" class="message__form">
                 <p>Если есть какие-то вопросы и нет желания звонить, писать на почту или приезжать к нам:</p>
                 <input type="text" name="name" placeholder="Ваше имя">
-                <input type="text" name="phone" placeholder="Номер телефона">
+                <input type="tel" name="phone" placeholder="Номер телефона">
                 <input type="text" name="question" placeholder="Ваш вопрос">
-                <input type="submit" value="ПОЛУЧИТЬ ОТВЕТ" class="btn btn-outline">
+                <button type="submit" class="btn btn-outline">ПОЛУЧИТЬ ОТВЕТ </button>
             </form>
             <div class="message__logo show_desk">            
                 <img src="/assets/img/logo.svg" alt="ok-press">

@@ -73,6 +73,7 @@
 
 <?php include 'blocks/footer.php'; ?>
 
-<script src="/assets/js/script.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="/assets/js/script.js?<?php echo rand(); ?>"></script>
 </body>
 </html>

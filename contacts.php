@@ -9,11 +9,15 @@
 </head>
 <body>
 <?php include 'blocks/nav.php'; ?>
+<?php include 'blocks/popup.php'; ?>
 
 <div class="breadcrumbs base-background">Главная — О типографии — Контакты</div>
 <?php include 'blocks/contacts.php'; ?>
 <?php include 'blocks/message.php'; ?>
 
-<?php include 'blocks/footer.php'; ?>    
+<?php include 'blocks/footer.php'; ?>
+
+<script src="https://unpkg.com/imask"></script>
+<script src="/assets/js/script.js"></script>
 </body>
 </html>

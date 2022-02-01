@@ -3,149 +3,103 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: white;
+
+    &__wrapper {
+
+    }
+
+    &__logo {
+
+    }
 
     &__menu {
-        display: flex;
-        color: white;
+        font-weight: bold;
     }
-        &__pages {
-            width: 50%;
+        &__column {
             display: flex;
             flex-direction: column;
+            width: 100%;
+        }
+            &__item {
+                margin-bottom: 10px;
+            }
 
-            // &-item {
-            // }
-        }
-        &__services {
-            
-            &-indicator {
-                display: none;
-            }
-            // &-item {
-            // }
-            &-title {
-                display: block;
-            }
-            &-list {
-                display: flex;
-                flex-direction: column;
-            }
-        }
+    &__contact {
+
+    }
 }
 
 @media screen and #{$is_mobile} {
     .footer {
 
-        // &__menu {
-        // }
-            &__pages {
-                width: 50%;
-                font-size: 16px;
-
-                &-item {
-                    margin-bottom: 15px;
-                }
-            }
-            &__services {
-                width: 50%;
-
-                // &-item {
-                // }
-
-                &-title {
-                    font-size: 16px;
-                    margin-bottom: 6px;
-                    position: relative;
-
-                    &::after {
-                        content: "+";
-                        position: absolute;
-                        right: 16px;
-                    }
-                }
-                &-indicator:checked + &-title::after {
-                    content: "-";
-                }
-
-                &-list {
-                    font-size: 12px;
-                    margin-bottom: 9px;
-                    max-height: 0px;
-                    overflow: hidden;
-                    transition: max-height 1s;
-                }
-                &-indicator:checked ~ &-list {
-                    max-height: 300px;
-                }
-            }
-
-        &__info {
-            display: flex;
-            align-items: flex-end;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
         }
-            &__logo {
-                width: 50%;
 
-                &-img {
-                    height: 107px;
+        &__logo {
+
+            &-img {
+                // width: 50%;
+                height: 130px;
+            }
+        }
+
+        &__menu {
+            order: -1;
+            grid-column: auto / span 2;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 50px;
+            font-size: 16px;
+        }
+            &__column {
+            }
+                &__item {
                 }
-            }
-            &__contact {
-                width: 50%;
-                font-size: 16px;
-                color: white;
-                line-height: 21px;
-            }
+
+        &__contact {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+        }
     }
 }
 
 @media screen and #{$is_desktop} {
     .footer {
 
-        .container {
-            display: flex;
+        &__wrapper {
+            // display: flex;
+            // justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 1.3fr 1fr;
         }
+    
+        &__logo {
 
+            &-img {
+                height: 170px;
+            }
+        }
+    
         &__menu {
-            order: 1;
-            width: 70%;
+            display: flex;
+            font-size: 20px;
         }
-            &__pages {
-                font-size: 20px;
-                width: 40%;
-
-                // &-item { 
-                // }
+            &__column {
+                
             }
-            &__services {
-                display: flex;
-                width: 60%;
-
-                &-item {
-                    width: 50%;
-
+                &__item {
+    
                 }
-                &-title {
-                    font-size: 20px;
-                }
-                &-list {
-                    font-size: 16px;
-                }
-            }
-
-        &__info {
-            order: 0;
-            width: 30%;
+    
+        &__contact {
+            margin-left: auto;
+            margin-right: 0;
+            font-size: 22px;
         }
-            &__logo {
-                &-img {
-                    height: 172px;
-                }
-            }
-            &__contact {
-                font-size: 22px;
-                margin-top: 60px;
-                line-height: 29px;
-            }
     }
 }
