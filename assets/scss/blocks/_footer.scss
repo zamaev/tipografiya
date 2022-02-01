@@ -5,14 +5,6 @@
     background-position: center;
     color: white;
 
-    &__wrapper {
-
-    }
-
-    &__logo {
-
-    }
-
     &__menu {
         font-weight: bold;
     }
@@ -24,10 +16,6 @@
             &__item {
                 margin-bottom: 10px;
             }
-
-    &__contact {
-
-    }
 }
 
 @media screen and #{$is_mobile} {
@@ -41,7 +29,6 @@
         &__logo {
 
             &-img {
-                // width: 50%;
                 height: 130px;
             }
         }
@@ -55,10 +42,7 @@
             margin-bottom: 50px;
             font-size: 16px;
         }
-            &__column {
-            }
-                &__item {
-                }
+  
 
         &__contact {
             font-size: 18px;
@@ -72,8 +56,6 @@
     .footer {
 
         &__wrapper {
-            // display: flex;
-            // justify-content: space-between;
             display: grid;
             grid-template-columns: 1fr 1.3fr 1fr;
         }
@@ -89,12 +71,7 @@
             display: flex;
             font-size: 20px;
         }
-            &__column {
-                
-            }
-                &__item {
-    
-                }
+  
     
         &__contact {
             margin-left: auto;
