@@ -67,10 +67,22 @@ Object.entries(document.forms).forEach(el => {
             data[el.name] = el.value;
         });
 
-        postData('/handler.php', data)
+        postData('/handler', data)
         .then((data) => {
             let message = data.message;
             console.log(message);
+
+            form.querySelector('.message_text').innerHTML = message;
+            form.querySelector('.message_text').classList.remove('none');
+
+            setTimeout(() => {
+                form.querySelector('.message_text').classList.add('none');
+                form.querySelectorAll('input').forEach(el => {
+                    el.value = '';
+                });
+                closePopup();
+
+            }, 1500);
         });
 
     });

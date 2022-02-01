@@ -5,6 +5,7 @@
             <input type="text" name="name" id="" placeholder="Ваше имя"required>
             <input type="tel" name="phone" id="" placeholder="Номер телефона" required>
             <button class="btn btn-outline" type="submit">ЖДУ ЗВОНКА!</button>
+            <p class="message_text none"></p>
         </form>
     </div>
 </section>

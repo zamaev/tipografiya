@@ -8,6 +8,7 @@
                 <input type="tel" name="phone" placeholder="Номер телефона">
                 <input type="text" name="question" placeholder="Ваш вопрос">
                 <button type="submit" class="btn btn-outline">ПОЛУЧИТЬ ОТВЕТ </button>
+                <p class="message_text none"></p>
             </form>
             <div class="message__logo show_desk">            
                 <img src="/assets/img/logo.svg" alt="ok-press">
