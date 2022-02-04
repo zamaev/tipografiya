@@ -9,7 +9,8 @@ $menu_burger_color: $light_blue;
     height: #{$menu_burger_size}px;
     cursor: pointer;
 
-    div {
+    span {
+        display: block;
         position: relative;
         top: 0;
         height: #{$menu_burger_size / 5}px;
@@ -46,7 +47,7 @@ $menu_burger_color: $light_blue;
         width: #{$menu_burger_size}px;
     }
 
-    &:checked + .menu_burger__content .menu_burger__icon div {
+    &:checked + .menu_burger__content .menu_burger__icon span {
         &:first-child {
             top: -#{$menu_burger_size / 10}px;
             transform: rotateZ(45deg);

@@ -1,11 +1,11 @@
-<nav role="banner" class="nav">
+<nav class="nav">
     <div class="nav__content">
         <input type="checkbox" id="menu_burger__status">
         <div class="menu_burger__content">
             <label class="menu_burger__icon show_mob" for="menu_burger__status">
-                <div></div>
-                <div></div>
-                <div></div>
+                <span></span>
+                <span></span>
+                <span></span>
             </label>
             <div class="nav__info-block show_desk">
                 <div class="nav__partner">

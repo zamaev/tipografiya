@@ -5,6 +5,9 @@
     &__title {
         margin-bottom: 10px;
     }
+    &__map {
+        border: 0;
+    }
 }
 
 @media screen and #{$is_mobile} {

@@ -340,7 +340,8 @@ a.link-text-hover:hover, .link-text-hover a:hover {
   cursor: pointer;
 }
 
-.menu_burger__icon div {
+.menu_burger__icon span {
+  display: block;
   position: relative;
   top: 0;
   height: 4.4px;
@@ -350,16 +351,16 @@ a.link-text-hover:hover, .link-text-hover a:hover {
   transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
 }
 
-.menu_burger__icon div:first-child {
+.menu_burger__icon span:first-child {
   -webkit-transform-origin: 0;
           transform-origin: 0;
 }
 
-.menu_burger__icon div:nth-child(2) {
+.menu_burger__icon span:nth-child(2) {
   right: 0;
 }
 
-.menu_burger__icon div:last-child {
+.menu_burger__icon span:last-child {
   margin-bottom: 0;
   -webkit-transform-origin: 100%;
           transform-origin: 100%;
@@ -377,13 +378,13 @@ a.link-text-hover:hover, .link-text-hover a:hover {
   width: 22px;
 }
 
-#menu_burger__status:checked + .menu_burger__content .menu_burger__icon div:first-child {
+#menu_burger__status:checked + .menu_burger__content .menu_burger__icon span:first-child {
   top: -2.2px;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
 }
 
-#menu_burger__status:checked + .menu_burger__content .menu_burger__icon div:nth-child(2) {
+#menu_burger__status:checked + .menu_burger__content .menu_burger__icon span:nth-child(2) {
   width: 31.152px;
   top: 0;
   right: 4.76675px;
@@ -391,7 +392,7 @@ a.link-text-hover:hover, .link-text-hover a:hover {
           transform: rotateZ(-45deg);
 }
 
-#menu_burger__status:checked + .menu_burger__content .menu_burger__icon div:last-child {
+#menu_burger__status:checked + .menu_burger__content .menu_burger__icon span:last-child {
   top: 2.2px;
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
@@ -684,8 +685,8 @@ body.popup__open {
 
 @media screen and (max-width: 1000px) {
   .header {
-    background: bottom right/cover no-repeat url("../img/mobile_background_vector.svg"), center/cover no-repeat url("../img/mobile_header_background.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0.06%, rgba(255, 255, 255, 0.7)), color-stop(89.26%, #F8FBFC));
-    background: bottom right/cover no-repeat url("../img/mobile_background_vector.svg"), center/cover no-repeat url("../img/mobile_header_background.png"), linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0.06%, #F8FBFC 89.26%);
+    background: bottom right/cover no-repeat url("../img/mobile_background_vector.svg"), center/cover no-repeat url("../img/mobile_header_background.webp"), -webkit-gradient(linear, left top, left bottom, color-stop(0.06%, rgba(255, 255, 255, 0.7)), color-stop(89.26%, #F8FBFC));
+    background: bottom right/cover no-repeat url("../img/mobile_background_vector.svg"), center/cover no-repeat url("../img/mobile_header_background.webp"), linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0.06%, #F8FBFC 89.26%);
   }
   .header__content {
     padding-top: 100px;
@@ -1135,6 +1136,10 @@ body.popup__open {
 
 .contacts__title {
   margin-bottom: 10px;
+}
+
+.contacts__map {
+  border: 0;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1717,7 +1722,7 @@ body.popup__open {
 }
 
 .footer {
-  background: url("/assets/img/footer_background.png"), linear-gradient(90.88deg, #DEDEDE 0.07%, #6688AE 100%);
+  background: url("/assets/img/footer_background.webp"), linear-gradient(90.88deg, #DEDEDE 0.07%, #6688AE 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
